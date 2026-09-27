@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AgendamentoAcademia" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/roxo_academia</item>
+        <item name="colorPrimaryDark">@color/roxo_academia_escuro</item>
+        <item name="colorAccent">@color/laranja_destaque</item>
+    </style>
+</resources>

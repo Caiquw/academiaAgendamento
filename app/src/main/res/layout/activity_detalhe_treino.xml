@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_claro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/ivIconeDetalhe"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_treino"
+            android:contentDescription="@string/cd_icone_treino"
+            android:background="@drawable/bg_status_badge"
+            android:padding="16dp"
+            app:tint="@color/branco" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/tvModalidadeDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            tools:text="Muay Thai" />
+
+        <TextView
+            android:id="@+id/tvStatusDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_status_badge"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            tools:text="Confirmado" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/branco"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_instrutor"
+                android:textSize="12sp"
+                android:textColor="@color/texto_secundario" />
+
+            <TextView
+                android:id="@+id/tvInstrutorDetalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal"
+                tools:text="Prof. Carlos Souza" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_horario"
+                android:textSize="12sp"
+                android:textColor="@color/texto_secundario" />
+
+            <TextView
+                android:id="@+id/tvHorarioDetalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal"
+                tools:text="Segunda, 19h00" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_vagas"
+                android:textSize="12sp"
+                android:textColor="@color/texto_secundario" />
+
+            <TextView
+                android:id="@+id/tvVagasDetalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal"
+                tools:text="12 de 15 vagas ocupadas" />
+
+            <TextView
+                android:id="@+id/tvLabelObservacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/label_observacao"
+                android:textSize="12sp"
+                android:textColor="@color/texto_secundario"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvObservacaoDetalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:textColor="@color/texto_principal"
+                android:visibility="gone"
+                tools:text="Turma avançada, faixa roxa ou superior" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="28dp" />
+
+        <Button
+            android:id="@+id/btnAcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_confirmar"
+            android:backgroundTint="@color/roxo_academia"
+            android:textColor="@color/branco" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_voltar"
+            style="?attr/borderlessButtonStyle"
+            android:textColor="@color/roxo_academia" />
+
+    </LinearLayout>
+
+</ScrollView>

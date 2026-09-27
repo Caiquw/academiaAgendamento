@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Academia Presença</string>
+    <string name="lista_treinos_titulo">Treinos da Semana</string>
+    <string name="detalhe_treino_titulo">Detalhes do Treino</string>
+
+    <string name="cd_icone_treino">Ícone da modalidade de treino</string>
+
+    <string name="label_instrutor">INSTRUTOR</string>
+    <string name="label_horario">HORÁRIO</string>
+    <string name="label_vagas">VAGAS</string>
+    <string name="label_observacao">OBSERVAÇÃO</string>
+
+    <string name="formato_instrutor_horario">%1$s • %2$s</string>
+    <string name="formato_vagas_disponiveis">%1$d vagas disponíveis</string>
+    <string name="formato_vagas_ocupadas">%1$d de %2$d vagas ocupadas</string>
+    <string name="vagas_esgotadas">Vagas esgotadas</string>
+
+    <string name="status_confirmado">Confirmado</string>
+    <string name="status_lista_espera">Lista de espera</string>
+    <string name="status_cancelado">Cancelado</string>
+    <string name="status_nao_marcado">Não marcado</string>
+
+    <string name="btn_confirmar">Confirmar presença</string>
+    <string name="btn_cancelar">Cancelar presença</string>
+    <string name="btn_lista_espera">Entrar na lista de espera</string>
+    <string name="btn_sair_espera">Sair da lista de espera</string>
+    <string name="btn_voltar">Voltar</string>
+</resources>

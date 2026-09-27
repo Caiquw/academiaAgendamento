@@ -1,0 +1,15 @@
+<resources>
+    <color name="roxo_academia">#5B21B6</color>
+    <color name="roxo_academia_escuro">#4527A0</color>
+    <color name="laranja_destaque">#FF6D00</color>
+
+    <color name="verde_confirmado">#2E7D32</color>
+    <color name="amarelo_espera">#F9A825</color>
+    <color name="vermelho_cancelado">#C62828</color>
+    <color name="cinza_nao_marcado">#757575</color>
+
+    <color name="texto_principal">#212121</color>
+    <color name="texto_secundario">#757575</color>
+    <color name="fundo_claro">#F5F5F7</color>
+    <color name="branco">#FFFFFF</color>
+</resources>
