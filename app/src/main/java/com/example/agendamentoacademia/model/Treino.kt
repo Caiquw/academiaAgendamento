@@ -2,13 +2,7 @@ package com.example.agendamentoacademia.model
 
 import java.io.Serializable
 
-/**
- * Modelo imutável que representa um treino/aula da academia.
- * Implementa Serializable para poder ser passado entre Activities via Intent.
- *
- * O campo [observacao] é opcional (String?) e é tratado corretamente na
- * interface, sendo exibido apenas quando não for nulo/vazio.
- */
+
 data class Treino(
     val id: Int,
     val modalidade: String,

@@ -3,10 +3,7 @@ package com.example.agendamentoacademia.data
 import com.example.agendamentoacademia.model.StatusPresenca
 import com.example.agendamentoacademia.model.Treino
 
-/**
- * Fonte de dados simulada (mock) dos treinos da academia.
- * Nesta etapa não há API nem banco de dados: os dados vivem em memória.
- */
+
 object TreinosMock {
 
     val lista: List<Treino> = listOf(

@@ -11,10 +11,7 @@ import com.example.agendamentoacademia.databinding.ItemTreinoBinding
 import com.example.agendamentoacademia.model.StatusPresenca
 import com.example.agendamentoacademia.model.Treino
 
-/**
- * Adapter da RecyclerView que exibe a lista de treinos.
- * Usa ViewBinding (ItemTreinoBinding) para conectar as Views do item ao Kotlin.
- */
+
 class TreinoAdapter(
     private val treinos: List<Treino>,
     private val aoClicar: (Treino) -> Unit

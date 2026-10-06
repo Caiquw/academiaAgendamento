@@ -11,14 +11,6 @@ import com.example.agendamentoacademia.model.StatusPresenca
 import com.example.agendamentoacademia.model.Treino
 import com.example.agendamentoacademia.util.getSerializableExtraCompat
 
-/**
- * Tela 2: exibe os detalhes de um treino recebido via Intent explícita.
- *
- * A interação principal (obrigatória) acontece no botão de ação: ele avança
- * o fluxo de presença do aluno (confirmar / cancelar / entrar ou sair da
- * lista de espera), atualizando a interface (textos, cores e status) e
- * devolvendo o resultado para a Tela 1 por meio de setResult + Intent.
- */
 class DetalheTreinoActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetalheTreinoBinding
@@ -47,10 +39,7 @@ class DetalheTreinoActivity : AppCompatActivity() {
         atualizarInterface()
     }
 
-    /**
-     * Avança o fluxo de presença do aluno conforme o estado atual do treino.
-     * Trata também a ocupação de vagas, oferecendo lista de espera quando lotado.
-     */
+
     private fun registrarAcao() {
         treinoAtual = when (treinoAtual.statusPresenca) {
             StatusPresenca.CONFIRMADO -> treinoAtual.copy(
@@ -80,7 +69,7 @@ class DetalheTreinoActivity : AppCompatActivity() {
         setResult(RESULT_OK, intent)
     }
 
-    /** Atualiza todas as Views da tela a partir do estado atual de [treinoAtual]. */
+
     private fun atualizarInterface() {
         binding.tvModalidadeDetalhe.text = treinoAtual.modalidade
         binding.tvInstrutorDetalhe.text = treinoAtual.instrutor
@@ -91,7 +80,7 @@ class DetalheTreinoActivity : AppCompatActivity() {
             treinoAtual.vagasTotais
         )
 
-        // Tratamento do valor opcional (observacao: String?)
+
         val observacao = treinoAtual.observacao
         if (observacao.isNullOrBlank()) {
             binding.tvLabelObservacao.visibility = View.GONE

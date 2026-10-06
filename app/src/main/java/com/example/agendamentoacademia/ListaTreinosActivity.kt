@@ -10,13 +10,6 @@ import com.example.agendamentoacademia.databinding.ActivityListaTreinosBinding
 import com.example.agendamentoacademia.model.Treino
 import com.example.agendamentoacademia.util.getSerializableExtraCompat
 
-/**
- * Tela 1: lista os treinos da semana (RecyclerView).
- * Ao tocar em um treino, navega para a Tela 2 (DetalheTreinoActivity) via
- * Intent explícita, passando o objeto Treino selecionado.
- * O resultado da Tela 2 (status de presença atualizado) é recebido de volta
- * e reflete imediatamente na lista, sem recarregar a tela.
- */
 class ListaTreinosActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityListaTreinosBinding
@@ -43,7 +36,7 @@ class ListaTreinosActivity : AppCompatActivity() {
     }
 
     private fun abrirDetalhe(treino: Treino) {
-        // Navegação explícita entre as duas telas, com passagem de dados.
+
         val intent = Intent(this, DetalheTreinoActivity::class.java)
         intent.putExtra(EXTRA_TREINO, treino)
         detalheLauncher.launch(intent)

@@ -17,10 +17,10 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/ic_treino"
-            android:contentDescription="@string/cd_icone_treino"
             android:background="@drawable/bg_status_badge"
+            android:contentDescription="@string/cd_icone_treino"
             android:padding="16dp"
+            android:src="@drawable/ic_treino"
             app:tint="@color/branco" />
 
         <Space
@@ -32,9 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="@color/texto_principal"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@color/texto_principal"
             tools:text="Muay Thai" />
 
         <TextView
@@ -47,8 +47,8 @@
             android:paddingHorizontal="14dp"
             android:paddingVertical="5dp"
             android:textColor="@color/branco"
-            android:textStyle="bold"
             android:textSize="12sp"
+            android:textStyle="bold"
             tools:text="Confirmado" />
 
         <Space
@@ -58,24 +58,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="@color/branco"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_instrutor"
-                android:textSize="12sp"
-                android:textColor="@color/texto_secundario" />
+                android:textColor="@color/texto_secundario"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tvInstrutorDetalhe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textSize="16sp"
                 android:textColor="@color/texto_principal"
+                android:textSize="16sp"
                 tools:text="Prof. Carlos Souza" />
 
             <Space
@@ -86,16 +86,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_horario"
-                android:textSize="12sp"
-                android:textColor="@color/texto_secundario" />
+                android:textColor="@color/texto_secundario"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tvHorarioDetalhe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textSize="16sp"
                 android:textColor="@color/texto_principal"
+                android:textSize="16sp"
                 tools:text="Segunda, 19h00" />
 
             <Space
@@ -106,16 +106,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_vagas"
-                android:textSize="12sp"
-                android:textColor="@color/texto_secundario" />
+                android:textColor="@color/texto_secundario"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tvVagasDetalhe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textSize="16sp"
                 android:textColor="@color/texto_principal"
+                android:textSize="16sp"
                 tools:text="12 de 15 vagas ocupadas" />
 
             <TextView
@@ -124,8 +124,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:text="@string/label_observacao"
-                android:textSize="12sp"
                 android:textColor="@color/texto_secundario"
+                android:textSize="12sp"
                 android:visibility="gone" />
 
             <TextView
@@ -133,9 +133,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:textColor="@color/texto_principal"
                 android:textSize="14sp"
                 android:textStyle="italic"
-                android:textColor="@color/texto_principal"
                 android:visibility="gone"
                 tools:text="Turma avançada, faixa roxa ou superior" />
 
@@ -149,8 +149,8 @@
             android:id="@+id/btnAcao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_confirmar"
             android:backgroundTint="@color/roxo_academia"
+            android:text="@string/btn_confirmar"
             android:textColor="@color/branco" />
 
         <Space
@@ -159,10 +159,10 @@
 
         <Button
             android:id="@+id/btnVoltar"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_voltar"
-            style="?attr/borderlessButtonStyle"
             android:textColor="@color/roxo_academia" />
 
     </LinearLayout>
