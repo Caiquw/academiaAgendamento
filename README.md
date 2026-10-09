@@ -11,7 +11,7 @@ Aplicativo para marcar presença em treinos de uma academia. O aluno vê a lista
 3. Use um emulador ou aparelho com Android 13 (API 33) ou superior.
 4. Clique em Run.
 
-Não há chaves de API nem arquivo `.env`.
+Não há chaves de API nem arquivo .env.
 
 ## Bibliotecas externas
 
@@ -19,4 +19,4 @@ Não há chaves de API nem arquivo `.env`.
 - **AndroidX AppCompat:** base das Activities e da barra superior.
 - **Material Components:** tema visual.
 - **AndroidX RecyclerView:** lista de treinos.
-- **AndroidX Activity KTX:** `registerForActivityResult`, para a tela de detalhe devolver o resultado à lista.
+- **AndroidX Activity KTX:** registerForActivityResult, para a tela de detalhe devolver o resultado à lista.
